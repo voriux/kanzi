@@ -1,792 +1,798 @@
 {
-  "intents": [
-    {
-      "intent": "RecommendVideo"
-    },
-    {
-      "intent": "RecommendAudio"
-    },
-    {
-      "intent": "RecommendMovie",
-      "slots": [
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "kodi",
+      "intents": [
         {
-          "name": "MovieGenre",
-          "type": "MOVIEGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "RecommendShow",
-      "slots": [
-        {
-          "name": "ShowGenre",
-          "type": "SHOWGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "RecommendEpisode",
-      "slots": [
-        {
-          "name": "ShowGenre",
-          "type": "SHOWGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "RecommendMusicVideo",
-      "slots": [
-        {
-          "name": "MusicVideoGenre",
-          "type": "MUSICVIDEOGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "RecommendArtist",
-      "slots": [
-        {
-          "name": "MusicGenre",
-          "type": "MUSICGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "RecommendAlbum",
-      "slots": [
-        {
-          "name": "MusicGenre",
-          "type": "MUSICGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "RecommendSong",
-      "slots": [
-        {
-          "name": "MusicGenre",
-          "type": "MUSICGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "WhatNewAlbums"
-    },
-    {
-      "intent": "WhatNewMovies",
-      "slots": [
-        {
-          "name": "MovieGenre",
-          "type": "MOVIEGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "WhatNewShows"
-    },
-    {
-      "intent": "WhatNewEpisodes",
-      "slots": [
-        {
-          "name": "Show",
-          "type": "SHOWS"
-        }
-      ]
-    },
-    {
-      "intent": "CleanVideo"
-    },
-    {
-      "intent": "UpdateVideo"
-    },
-    {
-      "intent": "CleanAudio"
-    },
-    {
-      "intent": "UpdateAudio"
-    },
-    {
-      "intent": "PlayerSeekForward",
-      "slots": [
-        {
-          "name": "ForwardDur",
-          "type": "AMAZON.DURATION"
-        }
-      ]
-    },
-    {
-      "intent": "PlayerSeekBackward",
-      "slots": [
-        {
-          "name": "BackwardDur",
-          "type": "AMAZON.DURATION"
-        }
-      ]
-    },
-    {
-      "intent": "PlayerSeekSmallForward"
-    },
-    {
-      "intent": "PlayerSeekSmallBackward"
-    },
-    {
-      "intent": "PlayerSeekBigForward"
-    },
-    {
-      "intent": "PlayerSeekBigBackward"
-    },
-    {
-      "intent": "AMAZON.CancelIntent"
-    },
-    {
-      "intent": "AMAZON.StopIntent"
-    },
-    {
-      "intent": "AMAZON.NoIntent"
-    },
-    {
-      "intent": "AMAZON.YesIntent"
-    },
-    {
-      "intent": "AMAZON.NextIntent"
-    },
-    {
-      "intent": "AMAZON.PauseIntent"
-    },
-    {
-      "intent": "AMAZON.PreviousIntent"
-    },
-    {
-      "intent": "AMAZON.ResumeIntent"
-    },
-    {
-      "intent": "AMAZON.StartOverIntent"
-    },
-    {
-      "intent": "AMAZON.ShuffleOnIntent"
-    },
-    {
-      "intent": "AMAZON.ShuffleOffIntent"
-    },
-    {
-      "intent": "AMAZON.LoopOnIntent"
-    },
-    {
-      "intent": "AMAZON.LoopOffIntent"
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "PlayMedia",
-      "slots": [
-        {
-          "name": "Movie",
-          "type": "MOVIES"
-        }
-      ]
-    },
-    {
-      "intent": "ShuffleMedia",
-      "slots": [
-        {
-          "name": "Show",
-          "type": "SHOWS"
-        }
-      ]
-    },
-    {
-      "intent": "WhatAlbums",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToAudio",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToGenre",
-      "slots": [
-        {
-          "name": "MusicGenre",
-          "type": "MUSICGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToArtist",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
+          "name": "RecommendVideo"
         },
         {
-          "name": "MusicGenre",
-          "type": "MUSICGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToLatestAlbum",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToAlbum",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
+          "name": "RecommendAudio"
         },
         {
-          "name": "Album",
-          "type": "MUSICALBUMS"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToSong",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
+          "name": "RecommendMovie",
+          "slots": [
+            {
+              "name": "MovieGenre",
+              "type": "MOVIEGENRES"
+            }
+          ]
         },
         {
-          "name": "Song",
-          "type": "MUSICSONGS"
+          "name": "RecommendShow",
+          "slots": [
+            {
+              "name": "ShowGenre",
+              "type": "SHOWGENRES"
+            }
+          ]
         },
         {
-          "name": "Album",
-          "type": "MUSICALBUMS"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToAlbumOrSong",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
+          "name": "RecommendEpisode",
+          "slots": [
+            {
+              "name": "ShowGenre",
+              "type": "SHOWGENRES"
+            }
+          ]
         },
         {
-          "name": "Song",
-          "type": "MUSICSONGS"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToAudioPlaylist",
-      "slots": [
-        {
-          "name": "AudioPlaylist",
-          "type": "MUSICPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ShuffleLatestAlbum",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ShuffleAlbum",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
+          "name": "RecommendMusicVideo",
+          "slots": [
+            {
+              "name": "MusicVideoGenre",
+              "type": "MUSICVIDEOGENRES"
+            }
+          ]
         },
         {
-          "name": "Album",
-          "type": "MUSICALBUMS"
-        }
-      ]
-    },
-    {
-      "intent": "ShuffleAudioPlaylist",
-      "slots": [
-        {
-          "name": "AudioPlaylist",
-          "type": "MUSICPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ListenToAudioPlaylistRecent"
-    },
-    {
-      "intent": "WatchVideo",
-      "slots": [
-        {
-          "name": "Movie",
-          "type": "MOVIES"
-        }
-      ]
-    },
-    {
-      "intent": "WatchEpisode",
-      "slots": [
-        {
-          "name": "Show",
-          "type": "SHOWS"
+          "name": "RecommendArtist",
+          "slots": [
+            {
+              "name": "MusicGenre",
+              "type": "MUSICGENRES"
+            }
+          ]
         },
         {
-          "name": "Episode",
-          "type": "AMAZON.NUMBER"
+          "name": "RecommendAlbum",
+          "slots": [
+            {
+              "name": "MusicGenre",
+              "type": "MUSICGENRES"
+            }
+          ]
         },
         {
-          "name": "Season",
-          "type": "AMAZON.NUMBER"
-        }
-      ]
-    },
-    {
-      "intent": "WatchRandomEpisode",
-      "slots": [
-        {
-          "name": "Show",
-          "type": "SHOWS"
-        }
-      ]
-    },
-    {
-      "intent": "WatchRandomShow",
-      "slots": [
-        {
-          "name": "ShowGenre",
-          "type": "SHOWGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "WatchLatestEpisode",
-      "slots": [
-        {
-          "name": "Show",
-          "type": "SHOWS"
-        }
-      ]
-    },
-    {
-      "intent": "WatchNextEpisode",
-      "slots": [
-        {
-          "name": "Show",
-          "type": "SHOWS"
-        }
-      ]
-    },
-    {
-      "intent": "WatchLastShow"
-    },
-    {
-      "intent": "WatchMovie",
-      "slots": [
-        {
-          "name": "Movie",
-          "type": "MOVIES"
-        }
-      ]
-    },
-    {
-      "intent": "WatchRandomMovie",
-      "slots": [
-        {
-          "name": "MovieGenre",
-          "type": "MOVIEGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "WatchMovieTrailer",
-      "slots": [
-        {
-          "name": "Movie",
-          "type": "MOVIES"
-        }
-      ]
-    },
-    {
-      "intent": "WatchMusicVideo",
-      "slots": [
-        {
-          "name": "MusicVideo",
-          "type": "MUSICVIDEOS"
+          "name": "RecommendSong",
+          "slots": [
+            {
+              "name": "MusicGenre",
+              "type": "MUSICGENRES"
+            }
+          ]
         },
         {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
-        }
-      ]
-    },
-    {
-      "intent": "WatchRandomMusicVideo",
-      "slots": [
-        {
-          "name": "MusicVideoGenre",
-          "type": "MUSICVIDEOGENRES"
+          "name": "WhatNewAlbums"
         },
         {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
-        }
-      ]
-    },
-    {
-      "intent": "WatchVideoPlaylist",
-      "slots": [
-        {
-          "name": "VideoPlaylist",
-          "type": "VIDEOPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ShuffleMusicVideos",
-      "slots": [
-        {
-          "name": "MusicVideoGenre",
-          "type": "MUSICVIDEOGENRES"
+          "name": "WhatNewMovies",
+          "slots": [
+            {
+              "name": "MovieGenre",
+              "type": "MOVIEGENRES"
+            }
+          ]
         },
         {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ShuffleShow",
-      "slots": [
-        {
-          "name": "Show",
-          "type": "SHOWS"
-        }
-      ]
-    },
-    {
-      "intent": "ShuffleVideoPlaylist",
-      "slots": [
-        {
-          "name": "VideoPlaylist",
-          "type": "VIDEOPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ShufflePlaylist",
-      "slots": [
-        {
-          "name": "AudioPlaylist",
-          "type": "MUSICPLAYLISTS"
+          "name": "WhatNewShows"
         },
         {
-          "name": "VideoPlaylist",
-          "type": "VIDEOPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "Home"
-    },
-    {
-      "intent": "Back"
-    },
-    {
-      "intent": "Info"
-    },
-    {
-      "intent": "Up"
-    },
-    {
-      "intent": "Down"
-    },
-    {
-      "intent": "Right"
-    },
-    {
-      "intent": "Left"
-    },
-    {
-      "intent": "Select"
-    },
-    {
-      "intent": "Menu"
-    },
-    {
-      "intent": "PageUp"
-    },
-    {
-      "intent": "PageDown"
-    },
-    {
-      "intent": "ViewMovies",
-      "slots": [
-        {
-          "name": "MovieGenre",
-          "type": "MOVIEGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "ViewShows",
-      "slots": [
-        {
-          "name": "ShowGenre",
-          "type": "SHOWGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "ViewMusicVideos",
-      "slots": [
-        {
-          "name": "MusicVideoGenre",
-          "type": "MUSICVIDEOGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "ViewMusic",
-      "slots": [
-        {
-          "name": "MusicGenre",
-          "type": "MUSICGENRES"
-        }
-      ]
-    },
-    {
-      "intent": "ViewArtists"
-    },
-    {
-      "intent": "ViewAlbums"
-    },
-    {
-      "intent": "ViewVideoPlaylist",
-      "slots": [
-        {
-          "name": "VideoPlaylist",
-          "type": "VIDEOPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ViewMoviePlaylistRecent"
-    },
-    {
-      "intent": "ViewEpisodePlaylistRecent"
-    },
-    {
-      "intent": "ViewMusicVideoPlaylistRecent"
-    },
-    {
-      "intent": "ViewAudioPlaylist",
-      "slots": [
-        {
-          "name": "AudioPlaylist",
-          "type": "MUSICPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "ViewAudioPlaylistRecent"
-    },
-    {
-      "intent": "ViewPlaylist",
-      "slots": [
-        {
-          "name": "AudioPlaylist",
-          "type": "MUSICPLAYLISTS"
+          "name": "WhatNewEpisodes",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            }
+          ]
         },
         {
-          "name": "VideoPlaylist",
-          "type": "VIDEOPLAYLISTS"
-        }
-      ]
-    },
-    {
-      "intent": "Fullscreen"
-    },
-    {
-      "intent": "StereoscopicMode"
-    },
-    {
-      "intent": "AudioPassthrough"
-    },
-    {
-      "intent": "Mute"
-    },
-    {
-      "intent": "VolumeUp"
-    },
-    {
-      "intent": "VolumeDown"
-    },
-    {
-      "intent": "VolumeSet",
-      "slots": [
-        {
-          "name": "Volume",
-          "type": "AMAZON.NUMBER"
-        }
-      ]
-    },
-    {
-      "intent": "VolumeSetPct",
-      "slots": [
-        {
-          "name": "Volume",
-          "type": "AMAZON.NUMBER"
-        }
-      ]
-    },
-    {
-      "intent": "SubtitlesOn"
-    },
-    {
-      "intent": "SubtitlesOff"
-    },
-    {
-      "intent": "SubtitlesNext"
-    },
-    {
-      "intent": "SubtitlesPrevious"
-    },
-    {
-      "intent": "SubtitlesDownload"
-    },
-    {
-      "intent": "AudioStreamNext"
-    },
-    {
-      "intent": "AudioStreamPrevious"
-    },
-    {
-      "intent": "PlayerMoveUp"
-    },
-    {
-      "intent": "PlayerMoveDown"
-    },
-    {
-      "intent": "PlayerMoveLeft"
-    },
-    {
-      "intent": "PlayerMoveRight"
-    },
-    {
-      "intent": "PlayerRotateClockwise"
-    },
-    {
-      "intent": "PlayerRotateCounterClockwise"
-    },
-    {
-      "intent": "PlayerZoomHold"
-    },
-    {
-      "intent": "PlayerZoomIn"
-    },
-    {
-      "intent": "PlayerZoomInMoveUp"
-    },
-    {
-      "intent": "PlayerZoomInMoveDown"
-    },
-    {
-      "intent": "PlayerZoomInMoveLeft"
-    },
-    {
-      "intent": "PlayerZoomInMoveRight"
-    },
-    {
-      "intent": "PlayerZoomOut"
-    },
-    {
-      "intent": "PlayerZoomOutMoveUp"
-    },
-    {
-      "intent": "PlayerZoomOutMoveDown"
-    },
-    {
-      "intent": "PlayerZoomOutMoveLeft"
-    },
-    {
-      "intent": "PlayerZoomOutMoveRight"
-    },
-    {
-      "intent": "PlayerZoomReset"
-    },
-    {
-      "intent": "Hibernate"
-    },
-    {
-      "intent": "Reboot"
-    },
-    {
-      "intent": "Shutdown"
-    },
-    {
-      "intent": "Suspend"
-    },
-    {
-      "intent": "EjectMedia"
-    },
-    {
-      "intent": "PartyMode"
-    },
-    {
-      "intent": "CurrentPlayItemInquiry"
-    },
-    {
-      "intent": "CurrentPlayItemTimeRemaining"
-    },
-    {
-      "intent": "AddonExecute",
-      "slots": [
-        {
-          "name": "Addon",
-          "type": "ADDONS"
-        }
-      ]
-    },
-    {
-      "intent": "AddonGlobalSearch",
-      "slots": [
-        {
-          "name": "Artist",
-          "type": "MUSICARTISTS"
+          "name": "CleanVideo"
         },
         {
-          "name": "Album",
-          "type": "MUSICALBUMS"
+          "name": "UpdateVideo"
         },
         {
-          "name": "Song",
-          "type": "MUSICSONGS"
+          "name": "CleanAudio"
         },
         {
-          "name": "Movie",
-          "type": "MOVIES"
+          "name": "UpdateAudio"
         },
         {
-          "name": "Show",
-          "type": "SHOWS"
+          "name": "PlayerSeekForward",
+          "slots": [
+            {
+              "name": "ForwardDur",
+              "type": "AMAZON.DURATION"
+            }
+          ]
+        },
+        {
+          "name": "PlayerSeekBackward",
+          "slots": [
+            {
+              "name": "BackwardDur",
+              "type": "AMAZON.DURATION"
+            }
+          ]
+        },
+        {
+          "name": "PlayerSeekSmallForward"
+        },
+        {
+          "name": "PlayerSeekSmallBackward"
+        },
+        {
+          "name": "PlayerSeekBigForward"
+        },
+        {
+          "name": "PlayerSeekBigBackward"
+        },
+        {
+          "name": "AMAZON.CancelIntent"
+        },
+        {
+          "name": "AMAZON.StopIntent"
+        },
+        {
+          "name": "AMAZON.NoIntent"
+        },
+        {
+          "name": "AMAZON.YesIntent"
+        },
+        {
+          "name": "AMAZON.NextIntent"
+        },
+        {
+          "name": "AMAZON.PauseIntent"
+        },
+        {
+          "name": "AMAZON.PreviousIntent"
+        },
+        {
+          "name": "AMAZON.ResumeIntent"
+        },
+        {
+          "name": "AMAZON.StartOverIntent"
+        },
+        {
+          "name": "AMAZON.ShuffleOnIntent"
+        },
+        {
+          "name": "AMAZON.ShuffleOffIntent"
+        },
+        {
+          "name": "AMAZON.LoopOnIntent"
+        },
+        {
+          "name": "AMAZON.LoopOffIntent"
+        },
+        {
+          "name": "AMAZON.HelpIntent"
+        },
+        {
+          "name": "PlayMedia",
+          "slots": [
+            {
+              "name": "Movie",
+              "type": "MOVIES"
+            }
+          ]
+        },
+        {
+          "name": "ShuffleMedia",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            }
+          ]
+        },
+        {
+          "name": "WhatAlbums",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            }
+          ]
+        },
+        {
+          "name": "ListenToAudio",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            }
+          ]
+        },
+        {
+          "name": "ListenToGenre",
+          "slots": [
+            {
+              "name": "MusicGenre",
+              "type": "MUSICGENRES"
+            }
+          ]
+        },
+        {
+          "name": "ListenToArtist",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            },
+            {
+              "name": "MusicGenre",
+              "type": "MUSICGENRES"
+            }
+          ]
+        },
+        {
+          "name": "ListenToLatestAlbum",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            }
+          ]
+        },
+        {
+          "name": "ListenToAlbum",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            },
+            {
+              "name": "Album",
+              "type": "MUSICALBUMS"
+            }
+          ]
+        },
+        {
+          "name": "ListenToSong",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            },
+            {
+              "name": "Song",
+              "type": "MUSICSONGS"
+            },
+            {
+              "name": "Album",
+              "type": "MUSICALBUMS"
+            }
+          ]
+        },
+        {
+          "name": "ListenToAlbumOrSong",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            },
+            {
+              "name": "Song",
+              "type": "MUSICSONGS"
+            }
+          ]
+        },
+        {
+          "name": "ListenToAudioPlaylist",
+          "slots": [
+            {
+              "name": "AudioPlaylist",
+              "type": "MUSICPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "ShuffleLatestAlbum",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            }
+          ]
+        },
+        {
+          "name": "ShuffleAlbum",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            },
+            {
+              "name": "Album",
+              "type": "MUSICALBUMS"
+            }
+          ]
+        },
+        {
+          "name": "ShuffleAudioPlaylist",
+          "slots": [
+            {
+              "name": "AudioPlaylist",
+              "type": "MUSICPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "ListenToAudioPlaylistRecent"
+        },
+        {
+          "name": "WatchVideo",
+          "slots": [
+            {
+              "name": "Movie",
+              "type": "MOVIES"
+            }
+          ]
+        },
+        {
+          "name": "WatchEpisode",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            },
+            {
+              "name": "Episode",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Season",
+              "type": "AMAZON.NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "WatchRandomEpisode",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            }
+          ]
+        },
+        {
+          "name": "WatchRandomShow",
+          "slots": [
+            {
+              "name": "ShowGenre",
+              "type": "SHOWGENRES"
+            }
+          ]
+        },
+        {
+          "name": "WatchLatestEpisode",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            }
+          ]
+        },
+        {
+          "name": "WatchNextEpisode",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            }
+          ]
+        },
+        {
+          "name": "WatchLastShow"
+        },
+        {
+          "name": "WatchMovie",
+          "slots": [
+            {
+              "name": "Movie",
+              "type": "MOVIES"
+            }
+          ]
+        },
+        {
+          "name": "WatchRandomMovie",
+          "slots": [
+            {
+              "name": "MovieGenre",
+              "type": "MOVIEGENRES"
+            }
+          ]
+        },
+        {
+          "name": "WatchMovieTrailer",
+          "slots": [
+            {
+              "name": "Movie",
+              "type": "MOVIES"
+            }
+          ]
+        },
+        {
+          "name": "WatchMusicVideo",
+          "slots": [
+            {
+              "name": "MusicVideo",
+              "type": "MUSICVIDEOS"
+            },
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            }
+          ]
+        },
+        {
+          "name": "WatchRandomMusicVideo",
+          "slots": [
+            {
+              "name": "MusicVideoGenre",
+              "type": "MUSICVIDEOGENRES"
+            },
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            }
+          ]
+        },
+        {
+          "name": "WatchVideoPlaylist",
+          "slots": [
+            {
+              "name": "VideoPlaylist",
+              "type": "VIDEOPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "ShuffleMusicVideos",
+          "slots": [
+            {
+              "name": "MusicVideoGenre",
+              "type": "MUSICVIDEOGENRES"
+            },
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            }
+          ]
+        },
+        {
+          "name": "ShuffleShow",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            }
+          ]
+        },
+        {
+          "name": "ShuffleVideoPlaylist",
+          "slots": [
+            {
+              "name": "VideoPlaylist",
+              "type": "VIDEOPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "ShufflePlaylist",
+          "slots": [
+            {
+              "name": "AudioPlaylist",
+              "type": "MUSICPLAYLISTS"
+            },
+            {
+              "name": "VideoPlaylist",
+              "type": "VIDEOPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "Home"
+        },
+        {
+          "name": "Back"
+        },
+        {
+          "name": "Info"
+        },
+        {
+          "name": "Up"
+        },
+        {
+          "name": "Down"
+        },
+        {
+          "name": "Right"
+        },
+        {
+          "name": "Left"
+        },
+        {
+          "name": "Select"
+        },
+        {
+          "name": "Menu"
+        },
+        {
+          "name": "PageUp"
+        },
+        {
+          "name": "PageDown"
+        },
+        {
+          "name": "ViewMovies",
+          "slots": [
+            {
+              "name": "MovieGenre",
+              "type": "MOVIEGENRES"
+            }
+          ]
+        },
+        {
+          "name": "ViewShows",
+          "slots": [
+            {
+              "name": "ShowGenre",
+              "type": "SHOWGENRES"
+            }
+          ]
+        },
+        {
+          "name": "ViewMusicVideos",
+          "slots": [
+            {
+              "name": "MusicVideoGenre",
+              "type": "MUSICVIDEOGENRES"
+            }
+          ]
+        },
+        {
+          "name": "ViewMusic",
+          "slots": [
+            {
+              "name": "MusicGenre",
+              "type": "MUSICGENRES"
+            }
+          ]
+        },
+        {
+          "name": "ViewArtists"
+        },
+        {
+          "name": "ViewAlbums"
+        },
+        {
+          "name": "ViewVideoPlaylist",
+          "slots": [
+            {
+              "name": "VideoPlaylist",
+              "type": "VIDEOPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "ViewMoviePlaylistRecent"
+        },
+        {
+          "name": "ViewEpisodePlaylistRecent"
+        },
+        {
+          "name": "ViewMusicVideoPlaylistRecent"
+        },
+        {
+          "name": "ViewAudioPlaylist",
+          "slots": [
+            {
+              "name": "AudioPlaylist",
+              "type": "MUSICPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "ViewAudioPlaylistRecent"
+        },
+        {
+          "name": "ViewPlaylist",
+          "slots": [
+            {
+              "name": "AudioPlaylist",
+              "type": "MUSICPLAYLISTS"
+            },
+            {
+              "name": "VideoPlaylist",
+              "type": "VIDEOPLAYLISTS"
+            }
+          ]
+        },
+        {
+          "name": "Fullscreen"
+        },
+        {
+          "name": "StereoscopicMode"
+        },
+        {
+          "name": "AudioPassthrough"
+        },
+        {
+          "name": "Mute"
+        },
+        {
+          "name": "VolumeUp"
+        },
+        {
+          "name": "VolumeDown"
+        },
+        {
+          "name": "VolumeSet",
+          "slots": [
+            {
+              "name": "Volume",
+              "type": "AMAZON.NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "VolumeSetPct",
+          "slots": [
+            {
+              "name": "Volume",
+              "type": "AMAZON.NUMBER"
+            }
+          ]
+        },
+        {
+          "name": "SubtitlesOn"
+        },
+        {
+          "name": "SubtitlesOff"
+        },
+        {
+          "name": "SubtitlesNext"
+        },
+        {
+          "name": "SubtitlesPrevious"
+        },
+        {
+          "name": "SubtitlesDownload"
+        },
+        {
+          "name": "AudioStreamNext"
+        },
+        {
+          "name": "AudioStreamPrevious"
+        },
+        {
+          "name": "PlayerMoveUp"
+        },
+        {
+          "name": "PlayerMoveDown"
+        },
+        {
+          "name": "PlayerMoveLeft"
+        },
+        {
+          "name": "PlayerMoveRight"
+        },
+        {
+          "name": "PlayerRotateClockwise"
+        },
+        {
+          "name": "PlayerRotateCounterClockwise"
+        },
+        {
+          "name": "PlayerZoomHold"
+        },
+        {
+          "name": "PlayerZoomIn"
+        },
+        {
+          "name": "PlayerZoomInMoveUp"
+        },
+        {
+          "name": "PlayerZoomInMoveDown"
+        },
+        {
+          "name": "PlayerZoomInMoveLeft"
+        },
+        {
+          "name": "PlayerZoomInMoveRight"
+        },
+        {
+          "name": "PlayerZoomOut"
+        },
+        {
+          "name": "PlayerZoomOutMoveUp"
+        },
+        {
+          "name": "PlayerZoomOutMoveDown"
+        },
+        {
+          "name": "PlayerZoomOutMoveLeft"
+        },
+        {
+          "name": "PlayerZoomOutMoveRight"
+        },
+        {
+          "name": "PlayerZoomReset"
+        },
+        {
+          "name": "Hibernate"
+        },
+        {
+          "name": "Reboot"
+        },
+        {
+          "name": "Shutdown"
+        },
+        {
+          "name": "Suspend"
+        },
+        {
+          "name": "EjectMedia"
+        },
+        {
+          "name": "PartyMode"
+        },
+        {
+          "name": "CurrentPlayItemInquiry"
+        },
+        {
+          "name": "CurrentPlayItemTimeRemaining"
+        },
+        {
+          "name": "AddonExecute",
+          "slots": [
+            {
+              "name": "Addon",
+              "type": "ADDONS"
+            }
+          ]
+        },
+        {
+          "name": "AddonGlobalSearch",
+          "slots": [
+            {
+              "name": "Artist",
+              "type": "MUSICARTISTS"
+            },
+            {
+              "name": "Album",
+              "type": "MUSICALBUMS"
+            },
+            {
+              "name": "Song",
+              "type": "MUSICSONGS"
+            },
+            {
+              "name": "Movie",
+              "type": "MOVIES"
+            },
+            {
+              "name": "Show",
+              "type": "SHOWS"
+            }
+          ]
         }
-      ]
+      ],
+      "types": []
     }
-  ]
+  }
 }
